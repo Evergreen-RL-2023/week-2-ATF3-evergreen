@@ -2,6 +2,14 @@
 k-bandits simulation
 you can do this in O-O, functional, or imperative style
 I used imperative here
+or O-O, 
+there would be a Bandit class, what are the methods?
+intiialize bandits
+loop for number of steps
+choose an action
+get reward
+update bandit (value and counts)
+update total rewards and total counts
 
 '''
 import numpy as np
@@ -33,3 +41,4 @@ if __name__ == '__main__':
 
     for i in range(k):
         print(q_star[i])
+
