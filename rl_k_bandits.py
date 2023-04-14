@@ -29,6 +29,16 @@ def init_bandits():
         q_star[i] = rnd.gauss(0, 1)
 
 
+
+# select action 
+
+    # if/else for choice with epsilon?
+
+
+# update reward and count
+
+
+
 def run_bandits(n_steps):
     for i in range(n_steps):
         counts[0] += 1
