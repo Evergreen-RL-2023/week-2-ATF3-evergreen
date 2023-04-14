@@ -41,7 +41,7 @@ def run_bandits(n_steps, eps):
 if __name__ == '__main__':
     rnd.seed(42)
     init_bandits()
-    eps_list = np.arange(0.0, 1.05, 0.05)
+    eps_list = np.arange(0.000, 0.105, 0.005)
     avg_rewards = []
     total_rewards = []
     print(f"{'Eps':<7}{'Average rewards':<20}{'Total rewards':<20}")
@@ -50,10 +50,10 @@ if __name__ == '__main__':
             avg_reward, total_reward = run_bandits(1000, eps)
             avg_rewards.append(avg_reward)
             total_rewards.append(total_reward)
-            print(f"{eps:<7.2f}{avg_reward:<20.2f}{total_reward:<20.2f}")
+            print(f"{eps:<7.3f}{avg_reward:<20.3f}{total_reward:<20.3f}")
 
-    plt.plot(eps_list, total_rewards)
+    plt.scatter(eps_list, total_rewards)
     plt.xlabel('Epsilon')
     plt.ylabel('Total Reward')
-    plt.savefig("plot.jpg")
+    plt.savefig("rew_vs_eps.jpg")
     plt.show()
