@@ -40,8 +40,8 @@ if __name__ == '__main__':
     init_bandits()
     x = run_bandits(1000)
     for i in range(k):
-        print(q_star[i], rewards[i])   # could format this print
-    # print(f"{'Action':<7}{'True rewards':<14}{'Estimated rewards':<20}")
+        print(q_star[i], rewards[i])   # should format this print.. WIP
+    # print(f"{'Action':<7}{'True rewards':<14}{'Estimated rewards':<20}")   # works but still aligns oddly
     # for i in range(k):
         # print(f"{i:<7}{q_star[i]:<14.2f}{rewards[i]:<20.2f}")
 
