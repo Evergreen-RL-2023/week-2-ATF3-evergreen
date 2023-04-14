@@ -9,8 +9,6 @@ rewards = np.zeros([k])
 counts = np.zeros([k])
 
 eps = 0.1  # exploration rate
-alpha = 0.1  # learning rate
-
 r_total = 0  # total rewards
 
 def init_bandits():
